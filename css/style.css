@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10 px*/
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  background-color: hsl(213, 19%, 18%);
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  width: 40rem;
+}
+.container {
+  padding: 4rem;
+
+  color: hsl(216, 12%, 54%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.star-image--container {
+  min-width: fit-content;
+}
+.star-image--container img {
+  display: block;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 2.3rem;
+  background-color: hsla(217, 12%, 63%, 15%);
+}
+.btn {
+  color: inherit;
+  background-color: hsla(217, 12%, 63%, 15%);
+  display: inline-block;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  font-weight: 700;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.btn:active {
+  background-color: hsl(216, 12%, 54%);
+}
+.selected--text {
+  background-color: hsla(217, 12%, 63%, 15%);
+  padding: 0.6rem 3rem;
+  color: hsl(25, 97%, 53%);
+  border-radius: 10rem;
+}
+.rating-submit--button {
+  width: 100%;
+  font-family: inherit;
+}
+.submit {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+.rating--details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-tertiary {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pgraph {
+  line-height: 1.7;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.thankyou--container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+}
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
